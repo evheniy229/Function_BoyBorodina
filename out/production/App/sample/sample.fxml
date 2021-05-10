@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="800.0">
+         <children>
+            <Text layoutX="627.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите вариант графика" />
+            <ComboBox fx:id="getVariant" layoutX="627.0" layoutY="40.0" prefWidth="150.0" />
+            <TextField fx:id="GetX" layoutX="627.0" layoutY="80.0" />
+            <Button fx:id="getBringOut" layoutX="716.0" layoutY="415.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="Вывести" />
+            <AreaChart fx:id="areaChart" layoutX="24.0" layoutY="22.0" prefHeight="467.0" prefWidth="500.0">
+                
+              <xAxis>
+                <NumberAxis autoRanging="false" lowerBound="-25.0" side="BOTTOM" tickMarkVisible="false" upperBound="25.0" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis autoRanging="false" lowerBound="-25.0" side="LEFT" tickMarkVisible="false" upperBound="25.0" />
+              </yAxis>
+
+            </AreaChart>
+            <TextField fx:id="GetY" layoutX="628.0" layoutY="120.0" />
+            <ComboBox fx:id="getFormula" layoutX="628.0" layoutY="240.0" prefWidth="150.0" />
+            <Text layoutX="544.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X координата" />
+            <Text layoutX="544.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y координата" />
+            <TextField fx:id="GetMinX" layoutX="628.0" layoutY="160.0" />
+            <Text layoutX="566.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xmin" />
+            <TextField fx:id="GetMaxX" layoutX="628.0" layoutY="200.0" />
+            <Text layoutX="565.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xmax" />
+            <Button fx:id="getClear" layoutX="716.0" layoutY="445.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="Выход" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
